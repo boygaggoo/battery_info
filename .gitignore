@@ -1,0 +1,6 @@
+# .gitinore for Android Projects
+.classpath
+.project
+/bin
+/gen
+/proguard
