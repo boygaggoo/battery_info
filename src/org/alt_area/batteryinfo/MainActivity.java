@@ -14,6 +14,9 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		displayInfo();
+
+	private void displayInfo() {
 		IntentFilter ifilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
 		Intent batteryStatus = registerReceiver(null, ifilter);
 		int status = batteryStatus.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
